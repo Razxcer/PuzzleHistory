@@ -122,41 +122,10 @@ form{
     border: none;
     color: rgb(142, 21, 21);
     background-color: rgba(134, 27, 27, 0.279);
-    font-size: 22px;
+    font-size: 26px;
     text-indent: 30px;
     padding: 4px;
     font-weight: bold;
     border-radius: 0.3em;
     /* box-shadow: 0px 0px 2px 0px var(--second-color); */
-}
-
-.link_sign_up{
-    width: 70%;
-    height: 30px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.link_sign_up>p{
-    color: var(--fifth-color);
-    font-size: 20px;
-
-    opacity: 0.8;
-}
-
-.link_sign_up>a{
-    color: var(--fifth-color);
-    font-size: 20px;
-
-    opacity: 0.8;
-}
-
-form>a{
-    color: var(--fifth-color);
-    font-size: 20px;
-    width: 70%;
-    text-align: center;
-    
-    opacity: 0.8;
 }

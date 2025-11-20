@@ -1,16 +1,16 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ваше имя</title>
-    <link rel="stylesheet" href="./css/styleLogIn.css?<?echo time();?>">
+    <title>Регистрация</title>
     <link rel="stylesheet" href="./css/styleHead.css?<?echo time();?>">
+    <link rel="stylesheet" href="./css/styleRegistration.css?<?echo time();?>">
 </head>
 <body>
-
-    <div class="wrapper">
+    
+<div class="wrapper">
 
 <div class="head">
             <a class="logo" href="./index.php">Puzzle History</a>
@@ -48,24 +48,23 @@
         </div>
 
     <div class="LogIn">
-                
-                <form action="./checkLogIn.php" method="post">
-                    <div class="title"><p>Вход</p></div>
-                    <input type="text" name="login" id="login" class="input login" placeholder="Логин" minlength="2" maxlength="40" value = <?php echo isset($_SESSION['login'])?$_SESSION['login']:""; ?>>
-                    <input type="password" name="password" id="password" class="input password" placeholder="Пароль" minlength="6" maxlength="100" value = <?php echo isset($_SESSION['password'])?$_SESSION['password']:""; ?>>
-                    <div class="warning" style="<?php echo isset($_SESSION['warning'])?"display: block;":"display: none;"; ?>"><?php echo isset($_SESSION['warning'])?$_SESSION['warning']:""; ?></div>
-                    <input type="submit" value="Войти" class="submit">
-
-                    <div class="link_sign_up">
-                        <p>Ещё нет аккаунта?</p>
-                        <a href="registration.php">Зарегистрироваться</a>
-                    </div>
-                    <a href="#">Забыли пароль?</a>
-                </form>
-            </div>
+    <form action="checkRegistration.php" method="post">
+        <div class="title"><p>Регистрация</p></div>
+        <input type="text" name="name" id="name" class="input name" placeholder="Имя Фамилия" maxlength="100" value = <?php echo isset($_SESSION['name'])?$_SESSION['name']:""; ?>>
+        <input type="text" name="login" id="login" class="input login" placeholder="Логин" minlength="2" maxlength="40" value = <?php echo isset($_SESSION['login'])?$_SESSION['login']:""; ?>>
+        <input type="password" name="password" id="password" class="input password" placeholder="Пароль" minlength="6" maxlength="100" value = <?php echo isset($_SESSION['password'])?$_SESSION['password']:""; ?>>  
+        <input type="password" name="password2" id="password2" class="input password2" placeholder="Повторите пароль" minlength="6" maxlength="100" value = <?php echo isset($_SESSION['password2'])?$_SESSION['password2']:""; ?>>
+        <div class="warning" style="<?php echo isset($_SESSION['warning'])?"display: block;":"display: none;"; ?>"><?php echo isset($_SESSION['warning'])?$_SESSION['warning']:""; ?></div>
+        <input type="submit" value="Зарегистрироваться" class="submit" id="reg">
+    </form>
+</div>
 
 
 </div>
-    
+
+
+
+
+
 </body>
 </html>

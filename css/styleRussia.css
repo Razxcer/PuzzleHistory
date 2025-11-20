@@ -3,14 +3,20 @@
     padding: 0;
 }
 
+:root{
+    --first-color: #CCD4DD;
+    --second-color: #141E1D;
+    --third-color: #446063;
+    --greenColor: #45AC42;
+}
+
+
 a{
     text-decoration: none;
 }
 
-:root{
-    --first-color: #efede3;
-    --second-color: #302f2c;
-    --third-color: #805539;
+body{
+    background-color: var(--first-color);
 }
 
 .wrap{
@@ -18,8 +24,20 @@ a{
     height: 1300px;
     position: relative;
     /* background-image: url(./../img/WOW.jpg); */
-    background-color: white;
+    background-color: var(--first-color);
     background-size: cover;
+}
+
+.wrap_game>svg{
+    fill: #6da2a8;
+    stroke: var(--second-color);
+    /* background-color: var(--third-color); */
+    /* background-image: url(./../img/test_1.jpg); */
+    /* box-shadow: 0px 0px 5px 5px grey; */
+    background-position: center;
+    background-size: cover;
+    /* background-color: rgb(181, 145, 92); */
+
 }
 
 .info{
@@ -144,8 +162,6 @@ button#startGame{
 }
 
 
-
-
 .puzsvg{
     position: absolute;
     stroke: var(--second-color);
@@ -177,17 +193,7 @@ button#startGame{
 }
 
 
-.wrap_game>svg{
-    fill: var(--first-color);
-    stroke: var(--second-color);
-    /* background-color: var(--third-color); */
-    /* background-image: url(./../img/test_1.jpg); */
-    /* box-shadow: 0px 0px 5px 5px grey; */
-    background-position: center;
-    background-size: cover;
-    /* background-color: rgb(181, 145, 92); */
 
-}
 
 
 

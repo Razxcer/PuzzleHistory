@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --first-color: #CCD4DD;
+    --second-color: #141E1D;
+    --third-color: #446063;
+    --greenColor: #45AC42;
+}
+
+::selection {
+  background: var(--third-color);
+  color: var(--first-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+.head{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    background-color: var(--third-color);
+}
+
+.logo{
+    margin: auto 20px;
+    color: var(--first-color);
+    font-style: italic;
+    font-size: 30px;
+}
+
+.liderboardLink{
+    align-self: center;
+    justify-self: right;
+    position: relative;
+}
+
+.liderboardLink svg{
+    fill: var(--first-color);
+    width: 30px;
+    height: 30px;  
+}
+
+.account{
+    align-self: center;
+    justify-self: right;
+    position: relative;
+    margin-left: 20px;
+}
+
+.account svg{
+    fill: var(--first-color);
+    width: 30px;
+    height: 30px;  
+}
+
+
+.liderboardLink::after {
+  content: attr(data-title); /* Берем текст из атрибута */
+  position: absolute;
+  bottom: -100%; /* Позиционируем над элементом */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden; /* Скрываем по умолчанию */
+  padding: 5px 10px;
+  background-color: var(--second-color);
+  color: var(--first-color);
+  border-radius: 4px;
+  transition: opacity 0.2s, visibility 0.2s;
+  white-space: nowrap; /* Предотвращаем перенос текста */
+}
+
+.liderboardLink:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+.account::after {
+  content: attr(data-title); /* Берем текст из атрибута */
+  position: absolute;
+  bottom: -100%; /* Позиционируем над элементом */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden; /* Скрываем по умолчанию */
+  padding: 5px 10px;
+  background-color: var(--second-color);
+  color: var(--first-color);
+  border-radius: 4px;
+  transition: opacity 0.2s, visibility 0.2s;
+  white-space: nowrap; /* Предотвращаем перенос текста */
+}
+
+.account:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+
