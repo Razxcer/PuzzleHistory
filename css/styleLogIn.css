@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.AreaForName{
+    width: 40%;
+    height: 400px;
+    margin: 200px auto;
+    background-color: cornflowerblue;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.YourName{
+    width: 70%;
+    color: azure;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+input[type = "text"]{
+    width: 80%;
+    height: 30px;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 0px 0px 5px 0px black;
+    text-indent: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]::placeholder{
+    text-indent: 20px;
+}
+
+
+button[type="submit"]{
+    width: 50%;
+    height: 50px;
+    border-radius: 1.5em;
+    border: none;
+    background-color: #45AC42;
+    box-shadow: 0px 0px 5px 0px black;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+

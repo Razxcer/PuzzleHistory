@@ -7,19 +7,19 @@
     --first-color: #efede3;
     --second-color: #302f2c;
     --third-color: #805539;
-}
-a{
-    text-decoration: none;
+    --greenColor: #45AC42;
 }
 
+
 .wrapper{
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
 }
 
 .catalog{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
 }
@@ -65,6 +65,16 @@ a{
 .games>.difficult{
     width: 90%;
 }
+
+button[type = "submit"]{
+    width: 80%;
+    border-radius: 1em;
+    height: 30px;
+    border: none;
+    background-color: var(--greenColor);
+    box-shadow: 2px 2px 3px 0px var(--second-color);
+}
+
 
 @media (max-width:450px)
 {
