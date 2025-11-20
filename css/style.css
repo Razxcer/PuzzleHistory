@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --first-color: #efede3;
+    --second-color: #302f2c;
+    --third-color: #805539;
+}
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.catalog{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+
+.games{
+    width: 40%;
+    height: 30%;
+    box-shadow: 0px 0px 10px 3px var(--second-color);
+    border-radius: 1.5em;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.games svg{
+    width: 90%;
+}
+
+#Russia svg{
+    fill: var(--first-color);
+    stroke: var(--second-color);
+    background: linear-gradient(white, white, blue, red);
+}
+
+#RussiaHARD svg{
+    fill: var(--first-color);
+    stroke: var(--first-color);
+    background: linear-gradient(45deg, black, red, black);
+}
+
+.games p{
+    width: 47%;
+    font-size: 1.1em;
+    color: var(--second-color);
+    align-content: center;
+    text-align: center;
+}
+
+.games>.difficult{
+    width: 90%;
+}
+
+@media (max-width:450px)
+{
+    .games p{
+        font-size: 0.8em;
+    }
+}
