@@ -23,10 +23,11 @@
 
         <div class="namePlayer info"><?php echo $_POST['name']?></div>
 
-        <div class="timer info">Прошло: 00:00</div>
+        <div class="timer info">0:00</div>
 
         <div id="endGame">
             <p>Ура! Вы собрали все 89 субьектов России правильно!</p>
+            <p class="timeEnd"></p>
             <div>
             <a href="./index.php" class="backToMain">Вернутся на главную</a>
             <a id="repeat">Еще раз</a>

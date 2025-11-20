@@ -14,12 +14,17 @@ let mouseScroll = false;
 const marginTop = 50;    //Потом, чтобы отодвинуть её от верхнего края и засунуть шапку
 const spaseforPuzzleX = 360;
 const spaseforPuzzleY = 700;
+let sec =0;
+let minutForTimer = 0;
+let secondForTimer = "";
 
 let about =  document.getElementById('about');
 let foScrol = document.getElementById('wrapGame');
 let startGame = document.getElementById("startGame");
+let endGame = document.getElementById("endGame");
 let puzSVG =[];
 puzSVG = document.getElementsByClassName('puzsvg');
+let timer = document.querySelector('.timer');
 
 let colors=[];
 colors[0] = "#FFFF66";
@@ -57,6 +62,8 @@ for(let i=0; i<puzSVG.length; i++)        //В самом начале карт�
 
 startGame.addEventListener('click', ()=>{
   startGame.style.display = "none";
+  timer.innerHTML = "0:00";
+  sec=0;
 
   for(let i=0; i<puzSVG.length; i++)
   {
@@ -68,9 +75,32 @@ startGame.addEventListener('click', ()=>{
   document.getElementById("puz66").style.left =  1220+ "px";
 
 
+    let time = setInterval(()=>{
+      sec++;
+      if(endGame.style.display == "flex")
+      {
+        clearInterval(time);
+      }
+      else{
+        minutForTimer = parseInt(sec/60);
+
+        if(parseInt((sec%60)/10)==0)
+        {
+          secondForTimer = "0" + parseInt(sec%60);
+        }
+        else{
+          secondForTimer = "" + parseInt(sec%60);
+        }
+
+        timer.innerHTML = minutForTimer + ":" + secondForTimer;
+      }
+
+    },1000);
+  
 
 
-})
+
+});
 
 
 
@@ -158,7 +188,8 @@ document.addEventListener('mouseup', () => {        // Очистка после
       currentElement.classList.add('blockSVG');
       if(document.getElementsByClassName('blockSVG').length == 89)
       {
-        document.getElementById("endGame").style.display="flex";
+        endGame.style.display="flex";
+        document.querySelector('.timeEnd').innerHTML = "За " + timer.innerHTML;
       }
 
     }
@@ -241,7 +272,8 @@ document.addEventListener('touchend', () => {        // Очистка посл�
       currentElement.firstElementChild.classList.add("AcceptTouchAction");
       if(document.getElementsByClassName('blockSVG').length == 89)
       {
-        document.getElementById("endGame").style.display="flex";
+        endGame.style.display="flex";
+        document.querySelector('.timeEnd').innerHTML = "За " + timer.innerHTML;
       }
 
     }
