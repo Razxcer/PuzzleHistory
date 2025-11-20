@@ -107,11 +107,10 @@
                 <p class="countPuz">89 элементов</p>
                 <p class="difficult">Сложность: Обычная</p>
                 <input type="text" name="game" id="game" value="./Russia.php" style="display: none;">
-
                 <button type="submit">Начать</button>
             </form>
 
-            <a href="./logIn.php" class="games" id="RussiaHARD">
+            <form class="games" id="RussiaHARD" method="post" action="./logIn.php">
                 <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny" x="0px" y="0px" viewBox="0 0 1000 600" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace"> 
                         <path d="m 130.24729,259.26463 -0.71301,-1.3323 -0.83965,1.13893 -1.20312,0.61639 -0.3652,1.98343 -2.7566,-1.20341 -1.29507,1.2557 -1.79887,-1.96928 -0.51738,2.08913 -1.70104,0.51357 0.48353,2.36036 1.41813,-1.06374 1.07846,1.34199 2.31013,-0.11587 0.63117,-1.4221 0.77636,1.28888 1.63087,-0.86752 1.60105,1.08107 2.52028,-0.21377 0.38854,-1.63667 -0.76508,-2.45949 0.30997,-0.96605 c -0.75062,0.0982 -0.83803,-0.13605 -1.19347,-0.41925 z" data-title="Москва" data-code="RU-MOW" id="gameSvg"></path>
                         <path d="m 136.30673,181.67516 -2.95955,-0.98651 -3.94605,0.98651 -0.98652,3.94606 0.98652,2.95954 3.94605,1.97303 2.95955,-1.97303 1.97302,-2.95954 -1.97302,-3.94606 z" data-title="Санкт-Петербург" data-code="RU-SPE"></path>
@@ -206,7 +205,9 @@
                 <p class="name">Россия</p>
                 <p class="countPuz">89 элементов</p>
                 <p class="difficult">Сложность: Очень Сложно</p>
-            </a>
+                <input type="text" name="game" id="game" value="./RussiaHARDMODE.php" style="display: none;">
+                <button type="submit">Начать</button>
+            </form>
 
         </div>
         <div id="versions">v.1.1.1</div>
