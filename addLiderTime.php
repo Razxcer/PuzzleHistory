@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 try {
     $liders = new PDO('mysql:host=MySQL-8.4;port=3306;dbname=puzzleHistory', "root");
 }
@@ -8,9 +10,17 @@ catch (PDOException $e){
 
 
 isset($_POST['login'])?$inputLogin = $_POST['login']:$inputLogin = "anonimus";
-isset($_POST['level'])?$inputLevel = $_POST['level']:$inputLevel = "anonimus";
 isset($_POST['name'])?$inputName = $_POST['name']:$inputName = "anonimus";
 isset($_POST['time'])?$inputTime = intval($_POST['time']):$inputTime = 0;
+
+if(isset($_POST['level']))
+{
+    $inputLevel = $_POST['level'];
+    $_SESSION['level'] = $_POST['level'];
+}
+else{
+    $inputLevel = "anonimus";
+}
 
     $result = $liders->query("SELECT * FROM Liderboard WHERE login = '$inputLogin' AND level = '$inputLevel';");
     $num_rows = $result->rowCount();

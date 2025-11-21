@@ -19,7 +19,7 @@
                 </svg>
             </a>
 
-            <a href="<?php echo isset($_SESSION['account'])?"":"./registration.php" ?>" class="account" data-title="<?php echo isset($_SESSION['account'])?$_SESSION['account']:"Создать аккаунт";?>">
+            <a href="<?php echo isset($_SESSION['account'])?"./logOut.php":"./logIn.php" ?>" class="account" data-title="<?php echo isset($_SESSION['account'])?$_SESSION['account']:"Войти";?>">
                 
             <?php 
             if(isset($_SESSION['account']))

@@ -186,7 +186,7 @@ document.addEventListener('mouseup', () => {        // Очистка после
       currentElement.style.left = ReadyX[num] + "px";
       currentElement.style.top = ReadyY[num] + "px";
       currentElement.classList.add('blockSVG');
-      if(document.getElementsByClassName('blockSVG').length == 1)
+      if(document.getElementsByClassName('blockSVG').length == 5)
       {
         endGame.style.display="flex";
         document.querySelector('.timeEnd').innerHTML = "За " + timer.innerHTML;
