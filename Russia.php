@@ -1,5 +1,6 @@
+<?php session_start();?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +22,10 @@
             <p>На главную</p>
         </a>
 
-        <div class="namePlayer info"><?php echo $_POST['name']?></div>
+        <div class="namePlayer info"><?php echo $_SESSION['name']?></div>
 
         <div class="timer info">0:00</div>
+        
 
         <div id="endGame">
             <p>Ура! Вы собрали все 89 субьектов России правильно!</p>
@@ -32,6 +34,13 @@
             <a href="./index.php" class="backToMain">Вернутся на главную</a>
             <a id="repeat">Еще раз</a>
             </div>
+            <form action="./liderBoard.php" method="post">
+            <input type="text" name="login" id="login" value="<?php echo $_SESSION['login']?>" style="display: none;">
+            <input type="text" name="name" id="name" value="<?php echo $_SESSION['name']?>" style="display: none;">
+            <input type="text" name="level" id="level" value="Россия - обычно" style="display: none;">
+            <input type="text" name="time" id="time" style="display: none;">
+            <button type="submit">Добавить результат в таблицу лидеров</button>
+        </form>
         </div>
 
         <div class="wrap_game" id="wrapGame">

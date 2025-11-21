@@ -37,7 +37,7 @@ session_start();
             $result = null;
             $LoginPasswordQue = null;
             $loginQue = null;
-
+            $_SESSION['warning'] = null;
             header("Location: ./index.php");
             exit;
         }

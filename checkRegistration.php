@@ -40,7 +40,7 @@
         $inputName = $_POST['name'];
 
 
-        $thisUser = "SELECT * FROM users WHERE login = '$inputLogin' AND password = '$inputPassword'";
+        $thisUser = "SELECT * FROM users WHERE login = '$inputLogin'";
 
         $result = $users->query($thisUser);
         $num_rows = $result->rowCount();
@@ -57,6 +57,7 @@
             $inputLogin = null;
             $inputPassword = null;
             $inputName = null;
+            $_SESSION['warning'] = null;
             header("Location: ./index.php");
             exit;
             

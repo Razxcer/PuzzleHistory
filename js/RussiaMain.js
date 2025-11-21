@@ -190,6 +190,7 @@ document.addEventListener('mouseup', () => {        // Очистка после
       {
         endGame.style.display="flex";
         document.querySelector('.timeEnd').innerHTML = "За " + timer.innerHTML;
+        document.querySelector('input#time').value = sec;
       }
 
     }
