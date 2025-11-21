@@ -33,7 +33,7 @@
             <a href="./index.php" class="backToMain">Вернутся на главную</a>
             <a id="repeat">Еще раз</a>
             </div>
-            <form action="./liderBoard.php" method="post">
+            <form action="./addLiderTime.php" method="post">
             <input type="text" name="login" id="login" value="<?php echo $_SESSION['login']?>" style="display: none;">
             <input type="text" name="name" id="name" value="<?php echo $_SESSION['name']?>" style="display: none;">
             <input type="text" name="level" id="level" value="Россия - сложно" style="display: none;">
