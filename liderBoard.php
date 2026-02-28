@@ -70,6 +70,10 @@
             <input type="text" name="level" id="level2" value="Россия - сложно" style="display: none;">
             <button type="submit" class="level" style="<?php echo $LevelNow=="Россия - сложно"?"border: 4px solid var(--second-color);":""; ?>">Россия - сложно</button>
         </form>
+        <form action="" method="post">
+            <input type="text" name="level" id="level3" value="Алтайский край - обычно" style="display: none;">
+            <button type="submit" class="level" style="<?php echo $LevelNow=="Алтайский край - обычно"?"border: 4px solid var(--second-color);":""; ?>">Алтайский край - обычно</button>
+        </form>
     </div>
 
     <div class="mainTable">

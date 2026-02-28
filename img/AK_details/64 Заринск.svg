@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="4.4602838mm"
+   height="4.5646877mm"
+   viewBox="0 0 4.4602838 4.5646877"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="64 Заринск.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.97548401"
+     inkscape:cx="222.96624"
+     inkscape:cy="-45.61838"
+     inkscape:window-width="2560"
+     inkscape:window-height="1334"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-46.037491,-160.60218)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path3087"
+       d="m 47.684418,164.09443 0.905301,0.47007 0.226325,0.27855 0.417832,-0.0348 0.435243,0.22633 0.174095,-0.22633 -0.03482,-0.26114 0.104458,-0.10446 0.08705,-0.26115 0.191505,-0.26114 0.03482,-0.48747 0.104457,-0.27856 -0.104457,-0.22632 -0.261147,-0.0348 -0.226324,0.15669 -0.121867,-0.0696 v -0.20892 l 0.591926,-0.60934 -0.156687,-0.3656 0.174099,-0.0696 -0.12187,-0.10445 0.261147,-0.19151 -0.835663,-0.12187 -0.365604,0.48747 -0.121867,-0.0871 -0.243737,0.47006 -0.313372,0.0174 -0.01741,-0.1915 -0.191505,-0.31338 -0.05223,-0.26114 0.40042,-0.22633 -0.278553,-0.24373 0.03482,-0.15669 -0.121867,-0.0696 -0.435242,0.20892 h -0.452652 l -0.313372,0.13928 h -0.278554 l -0.609338,0.80084 0.609338,0.55711 -0.12187,0.45265 0.766025,0.80084 z"
+       style="fill:#fefee9;fill-opacity:1;stroke:#646464;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
