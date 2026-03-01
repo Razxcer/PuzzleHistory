@@ -34,15 +34,13 @@ colors[3] = "#3300FF";
 colors[4] = "#66FFFF";
 colors[5] = "#33FF66";
 
-let ReadyX =[509.658, 836.448];
-let ReadyY =[394.133, 507.042];
+let ReadyX =[538.615, 836.448, 341.156, 881.951,252.507, 96.3036,768.333, 319.806,383.822, 960.208,375.604, 760.383, 794.115,502.078, 812.85, 652.635,381.354,192.567,785.005,959.125,585.602,379.435,530.381,855.583,439    ,450.094    ];
+let ReadyY =[391.865, 507.042, 252.448, 376.08, 321.991, 236.964,428.385, 462.38, 520.771, 260.483,333.615, 97.9833, 125.479,595.369,365.758, 306.625,152.771,426.52, 247.306,425.101,547.769,110.268,570.155,217.169,656.964,344.021  ];
 
 //  ^
 //  L_ координаты для каждого субьекта относительно 0:0
 
 
-
- 
 
 
 
@@ -183,7 +181,7 @@ document.addEventListener('mouseup', () => {        // Очистка после
       currentElement.style.left = ReadyX[num] + "px";
       currentElement.style.top = ReadyY[num] + "px";
       currentElement.classList.add('blockSVG');
-      if(document.getElementsByClassName('blockSVG').length == 1)
+      if(document.getElementsByClassName('blockSVG').length == 5)
       {
         endGame.style.display="flex";
         document.querySelector('.timeEnd').innerHTML = "За " + timer.innerHTML;
