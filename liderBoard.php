@@ -67,13 +67,18 @@
             <button type="submit" class="level" style="<?php echo $LevelNow=="Россия - обычно"?"border: 4px solid var(--second-color);":""; ?>">Россия - обычно</button>
         </form>
         <form action="" method="post">
+            <input type="text" name="level" id="level3" value="Алтайский край - обычно" style="display: none;">
+            <button type="submit" class="level" style="<?php echo $LevelNow=="Алтайский край - обычно"?"border: 4px solid var(--second-color);":""; ?>">Алтайский край - обычно</button>
+        </form>
+        <form action="" method="post">
             <input type="text" name="level" id="level2" value="Россия - сложно" style="display: none;">
             <button type="submit" class="level" style="<?php echo $LevelNow=="Россия - сложно"?"border: 4px solid var(--second-color);":""; ?>">Россия - сложно</button>
         </form>
         <form action="" method="post">
-            <input type="text" name="level" id="level3" value="Алтайский край - обычно" style="display: none;">
-            <button type="submit" class="level" style="<?php echo $LevelNow=="Алтайский край - обычно"?"border: 4px solid var(--second-color);":""; ?>">Алтайский край - обычно</button>
+            <input type="text" name="level" id="level4" value="Алтайский край - сложно" style="display: none;">
+            <button type="submit" class="level" style="<?php echo $LevelNow=="Алтайский край - сложно"?"border: 4px solid var(--second-color);":""; ?>">Алтайский край - сложно</button>
         </form>
+        
     </div>
 
     <div class="mainTable">
@@ -114,7 +119,6 @@
                         echo strval(strval(intval(floor($row['time'])/60)) . ":" . strval(intval($row['time'])%60));
                     }
                     echo "</td> <td>";
-                    echo $row['login'];
                     echo "</td> <td>";
                     echo $row['name'];
                     echo "</td> </tr>";

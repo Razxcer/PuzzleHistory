@@ -37,14 +37,14 @@
             <form action="./addLiderTime.php" method="post">
                 <input type="text" name="login" id="login" value="<?php echo $_SESSION['login']?>" style="display: none;">
                 <input type="text" name="name" id="name" value="<?php echo $_SESSION['name']?>" style="display: none;">
-                <input type="text" name="level" id="level" value="Алтайский край - обычно" style="display: none;">
+                <input type="text" name="level" id="level" value="Алтайский край - сложно" style="display: none;">
                 <input type="text" name="time" id="time" style="display: none;">
                 <button type="submit">Добавить результат в таблицу лидеров</button>
             </form>
         </div> 
 
         
-        <img src="./img/Outline_Map_of_Altai_Krai.svg" alt="" style="width: 1200px; user-select: none; touch-action: auto;"> <!-- Вся карта -->
+        <img src="./img/AltaiKraiHARD.svg" alt="" style="width: 1200px; user-select: none; touch-action: auto;"> <!-- Вся карта -->
 
 
         <svg class="puzsvg " id="puz0"

@@ -40,6 +40,7 @@
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
 }
 
 .games svg{
@@ -58,12 +59,21 @@
     height: 240px;
     align-self: flex-start;
     border-radius: 1.5em 1.5em 0 0;
-    background-image: url(./../img/Gerb_Altai.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
 }
+
+.Altai{
+    background-image: url(./../img/Gerb_Altai.jpg);
+}
+
+.AltaiHard{
+    background: linear-gradient(45deg, black, red, black);
+}
+
+
 
 #Russia svg{
     fill: var(--first-color);
