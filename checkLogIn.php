@@ -32,7 +32,7 @@ session_start();
         if($num_rows>0)
         {
             $_SESSION['account'] = $inputLogin;
-
+            $_SESSION['name'] = $result->fetch()['name'];
             $users = null;
             $result = null;
             $LoginPasswordQue = null;
