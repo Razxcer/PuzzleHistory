@@ -265,7 +265,8 @@
 
         </div>
         <div class="footer">
-            <div id="versions">v.1.1.1</div>
+            <div class="versions">Выполнил - Лукьянов К.Е</div>
+            <div class="versions">Руководители: Буланов Д.В., Лукьянова Н.В.</div>
         </div>
     </div>
 </body>

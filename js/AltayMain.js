@@ -48,6 +48,7 @@ let ReadyY =[391.839, 507.042, 252.448, 376.08, 321.991, 236.964,428.385, 462.38
 for(let i=0; i<puzSVG.length; i++)        //В самом начале карта заполняется а потом разлетается
 {
     let curPuz = document.getElementById("puz"+i);
+    curPuz.style.zIndex = 2000-i;
     curPuz.style.fill = colors[(Math.floor(Math.random()*10))%6];    
     curPuz.style.position = 'absolute';
     curPuz.style.left = ReadyX[i] + "px";

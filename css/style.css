@@ -116,6 +116,13 @@ button[type = "submit"]{
     height: 1000px;
 }
 
+.versions{
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+    margin:10px;
+    font-family:Arial;
+}
 @media (max-width:450px)
 {
     .games p{
