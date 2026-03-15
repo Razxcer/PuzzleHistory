@@ -149,7 +149,7 @@
             <form class="games" id="AltaiKrai" method="post" action="<?php echo isset($_SESSION['account'])?"./AltaiKrai.php":"./logIn.php";?>">
                 <div class="panel-for-img Altai"><img src="./img/Outline_Map_of_Altai_Krai_without_enother.svg" alt="Алтайский край"></div>
                 <p class="name">Алтайский край</p>
-                <p class="countPuz">71 элемент</p>
+                <p class="countPuz">70 элементов</p>
                 <p class="difficult">Сложность: Обычная</p>
                 <button type="submit">Начать</button>
             </form>
@@ -157,7 +157,7 @@
              <form class="games" id="AltaiKraiHARD" method="post" action="<?php echo isset($_SESSION['account'])?"./AltaiKraiHARDMODE.php":"./logIn.php";?>">
                 <div class="panel-for-img AltaiHard"><img src="./img/Outline_Map_of_Altai_Krai_without_enother-HARD.svg" alt="Алтайский край"></div>
                 <p class="name">Алтайский край</p>
-                <p class="countPuz">71 элемент</p>
+                <p class="countPuz">70 элементов</p>
                 <p class="difficult">Сложность: Сложно</p>
                 <button type="submit">Начать</button>
             </form>

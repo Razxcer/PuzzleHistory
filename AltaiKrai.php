@@ -1362,24 +1362,7 @@
             />
         </svg>
     
-        <svg class="puzsvg  " id="puz69"
-        width="10px"
-        height="10px"
-        viewBox="110.5 149.1 1.6528867 0.95438492"
-        version="1.1"
-        id="svg1"
-        inkscape:version="1.4 (86a8ad7, 2024-10-11)"
-        sodipodi:docname="новый 68 ЗАТО Сибирский.svg"
-        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:svg="http://www.w3.org/2000/svg">
-                    <path class="puzzle" data-title="ЗАТО Сибирский"
-            inkscape:connector-curvature="0"
-            id="path3095"
-            d="m 110.90058,150.04712 h 1.10373 l 0.11209,-0.069 -0.0259,-0.10348 -0.25869,-0.35354 -0.16383,-0.0172 -0.13797,-0.14659 -0.18108,0.27593 -0.32767,-0.11209 -0.29317,0.3018 z"
-            />
-        </svg>
+        
 
     <svg class="puzsvg" id="puz43"
         width="120px"
@@ -1422,7 +1405,7 @@
         </svg>
 
 
-        <svg class="puzsvg " id="puz70"
+        <svg class="puzsvg " id="puz69"
         width="15px"
         height="15px"
         viewBox="157.6 179.5 3.0235615 2.8802886"
