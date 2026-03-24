@@ -29,13 +29,13 @@ else{
     {
         if(intval($result->fetch()['time']) > $inputTime)
         {
-            $liders->query("UPDATE Liderboard SET time = '$inputTime' WHERE login = '$inputLogin' AND level = '$inputLevel';");
+            $liders->query("UPDATE Liderboard SET time = '$inputTime', create_at = NOW() WHERE login = '$inputLogin' AND level = '$inputLevel';");
         }
         header("Location:./liderBoard.php");
         exit;
     }
     else{
-        $liders->query("INSERT INTO Liderboard (login, level, name, time) VALUES ('$inputLogin', '$inputLevel', '$inputName', $inputTime);");
+        $liders->query("INSERT INTO Liderboard (login, level, name, time, create_at) VALUES ('$inputLogin', '$inputLevel', '$inputName', $inputTime, NOW());");
         header("Location:./liderBoard.php");
         exit;
     }

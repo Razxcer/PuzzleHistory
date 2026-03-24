@@ -89,7 +89,7 @@
         <th>Место</th>
         <th>Время</th>
         <th>Игрок</th>
-        <th>Имя Фамилия</th>
+        <th>Дата</th>
         </tr>
     </thead>
     <tbody>
@@ -119,8 +119,9 @@
                         echo strval(strval(intval(floor($row['time'])/60)) . ":" . strval(intval($row['time'])%60));
                     }
                     echo "</td> <td>";
-                    echo "</td> <td>";
                     echo $row['name'];
+                    echo "</td> <td>";
+                    echo $row['create_at'];
                     echo "</td> </tr>";
                 }
             }
