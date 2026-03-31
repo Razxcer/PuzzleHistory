@@ -267,10 +267,11 @@ document.addEventListener('touchend', () => {        // Очистка посл�
       currentElement.classList.add('blockSVG');
       currentElement.classList.add("AcceptTouchAction");
       currentElement.firstElementChild.classList.add("AcceptTouchAction");
-      if(document.getElementsByClassName('blockSVG').length == 71)
+      if(document.getElementsByClassName('blockSVG').length == 70)
       {
         endGame.style.display="flex";
         document.querySelector('.timeEnd').innerHTML = "За " + timer.innerHTML;
+        document.querySelector('input#time').value = sec;
       }
 
     }
